@@ -1,0 +1,143 @@
+html, body{
+    height: 100%;
+    margin: 0;
+}
+
+.homepage {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100%;
+    align-items: stretch;
+}
+
+header {
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    margin: 4px;
+    
+}
+
+header a{
+    font-family: Arial, sans-serif;
+    margin: 8px;
+}
+
+header .round-button{
+    margin: 8px;
+    background-color: rgba(60,64,67,0.2);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    
+}
+
+div {
+    display: block;
+}
+
+.logo-block img {
+    justify-self: flex-end;
+}
+
+.logo-block {
+    flex-grow: 1;
+    flex-shrink: 0;
+    height: calc(100% - 560px);
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+}
+.search-bar {
+    display: block;
+    margin: auto;
+    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 0;
+    max-width: 584px;
+    max-height: 40px;
+    
+    border-radius: 40px;
+    border: 1px solid #dfe1e5;
+
+    padding: 5px 8px 0 16px;
+    padding-left: 14px;
+
+    display:flex;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+.search-bar .search-icon{
+    
+    width: 24px;
+    padding-right: 13px;
+    vertical-align: middle;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.search-bar svg {
+    width: 24px;
+    height: 24px;
+    color: #9aa0a6;
+}
+
+.search-bar input{
+    flex: 1 1 100%;
+    
+    margin-right: 13px;
+    border-color: transparent;
+}
+
+.search-bar textarea:focus, input:focus{
+    outline: none;
+}
+
+.search-bar:hover, .active .search-bar {
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223,225,229,0);
+}
+
+
+.search-icon img {
+    visibility: hidden;
+    height: 24px;
+    width: 24px;
+    background: url(img/tia.png) no-repeat center;
+}
+footer {
+    align-self: stretch;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+
+.additional-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.language-text {
+    font-family: Arial, sans-serif;
+    margin-bottom: 32px;
+    display: block;
+    text-align: center;
+}
+
+.search-bar-block {
+    flex-grow: 1;
+    flex-shrink: 0;
+    max-height: 160px;
+    min-height: 160px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    justify-content: stretch;    
+}
