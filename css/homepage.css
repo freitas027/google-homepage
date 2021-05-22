@@ -3,6 +3,12 @@ html, body{
     margin: 0;
 }
 
+body {
+    font-size: 14px;
+    font-family: arial,sans-serif;
+    color: #222;
+}
+
 .homepage {
     display:flex;
     flex-direction: column;
@@ -28,9 +34,8 @@ header .round-button{
     margin: 8px;
     background-color: rgba(60,64,67,0.2);
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    
+    min-height: 32px;
+    min-width: 32px;
 }
 
 div {
@@ -53,7 +58,6 @@ div {
 }
 .search-bar {
     display: block;
-    margin: auto;
     width: 100%;
     flex-grow: 1;
     flex-shrink: 0;
@@ -72,7 +76,6 @@ div {
 }
 
 .search-bar .search-icon{
-    
     width: 24px;
     padding-right: 13px;
     vertical-align: middle;
@@ -81,17 +84,62 @@ div {
     align-items: center;
 }
 
+.search-buttons button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+.search-buttons button:hover{
+    text-decoration: none;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
 .search-bar svg {
     width: 24px;
     height: 24px;
     color: #9aa0a6;
 }
 
-.search-bar input{
+input, button, a{
     flex: 1 1 100%;
-    
-    margin-right: 13px;
     border-color: transparent;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+button, a {
+    border: none;
+    background: none;
+    padding: 15px;
+    color: #70757a;
+    text-decoration: none;
+}
+
+header a {
+    margin: 0px;
+    padding: 0px;
+    margin-right: 13px;
+}
+
+a:hover, button:hover {
+    text-decoration: underline;
+    cursor: pointer;
 }
 
 .search-bar textarea:focus, input:focus{
@@ -113,8 +161,18 @@ div {
 }
 footer {
     align-self: stretch;
-    flex-grow: 1;
     flex-shrink: 0;
+    background: #f2f2f2;
+}
+
+.flex-even {
+    display: flex;
+    justify-content: space-between;
+    flex:wrap;
+}
+
+.flex {
+    display: flex;
 }
 
 .additional-info {
@@ -137,7 +195,8 @@ footer {
     max-height: 160px;
     min-height: 160px;
     display: flex;
-    align-content: center;
+    align-items: center;
     flex-direction: column;
-    justify-content: stretch;    
+    justify-content: space-around;
+    padding: 20px;
 }
